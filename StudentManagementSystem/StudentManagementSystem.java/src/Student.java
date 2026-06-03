@@ -1,4 +1,5 @@
 public class Student {
+
     private int id;
     private String name;
     private int age;
@@ -21,7 +22,17 @@ public class Student {
         return age;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     public void displayStudent() {
-        System.out.println("ID: " + id + ", Name: " + name + ", Age: " + age);
+        System.out.println("ID: " + id +
+                           ", Name: " + name +
+                           ", Age: " + age);
     }
 }
